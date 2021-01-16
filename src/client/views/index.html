@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Website Sentiment Evaluator</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="logo">
+                Logo
+            </div>
+            <div class="nav">
+                navigation
+            </div>
+        </header>
+
+        <main>          
+            <section>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <h1 class="h1">Website Sentiment Evaluator</h1>
+                    <p>Wondering if you are reading an objective, aka fact-based article or a subjective, aka opinon based?<p>
+                    <p>Is this a positive or negative article?</p>
+                    <label name="input">Submit your website link or article text below to find out!</label>
+                    <input id="name" type="text" name="input" value="" placeholder="Name">
+                    <div id="urlErrorMsg" class="errorMsg"></div>
+                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                </form>
+            <section>
+
+            <section id="results-section">
+                <h2 class="h2">Sentiment Results:</h2>
+                <div id="results">Your results will appear here.</div>
+            </section>
+        </main>
+
+        <footer>
+            <p>This is a footer</p>
+        </footer>
+        <script>
+            // Check if service workers are supported 
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+
+    </body>
+</html>
