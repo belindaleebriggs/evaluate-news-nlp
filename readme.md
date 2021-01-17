@@ -5,6 +5,9 @@
 ## Usage
 This project uses MeaningCloud's [Sentiment Analysis API](https://www.meaningcloud.com/developer/sentiment-analysis) to evaluate a news article to determine it's positivity and subjectiveness.
 
+### Initial Project + Commit Tracking
+Project was moved from branch to allow further work and commit tracking from my personal profile here. Initial project work and commits can be seen here: https://github.com/belindaleebriggs/fend/tree/refresh-2019/projects/evaluate-news-nlp
+
 ## Project Goals
 1. Setting up Webpack
 2. Sass styles
