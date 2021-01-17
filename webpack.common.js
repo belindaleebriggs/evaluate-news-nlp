@@ -21,11 +21,14 @@ module.exports = {
                 loader: "babel-loader"
             },
             {
-                test: /\.(jpg|png)$/,
-                use: {
-                  loader: 'file-loader',
-                },
-              },
+                test: /\.png$/,
+                loader: 'file-loader',
+                options: { name: '[name].[ext]' }
+            },
+            {
+                test: /\.html$/,
+                loader: 'html-loader'
+            },
         ]
     },
     plugins: [
